@@ -53,7 +53,7 @@
       "required": false,
       "default": 0
     },
-    "thumbnil": {
+    "thumbnail": {
       "type": "media",
       "multiple": false,
       "required": true,
