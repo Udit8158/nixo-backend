@@ -1,0 +1,23 @@
+{
+  "name": "nixo-backend",
+  "version": "2.0.0",
+  "description": "This is our virtual shoe shop nixo backend in nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Udit8158/nixo-backend.git"
+  },
+  "author": "Udit Kundu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Udit8158/nixo-backend/issues"
+  },
+  "homepage": "https://github.com/Udit8158/nixo-backend#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
