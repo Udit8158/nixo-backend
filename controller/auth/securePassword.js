@@ -8,11 +8,9 @@ function hashPassword(paswd) {
   return hash;
 }
 
-function checkPassword(paswd) {
-  bcrypt.compare(paswd, hash, function (err, result) {
-    if (err) return err;
-    else return result;
-  });
+function checkPassword(passwd, hashedPaswd) {
+  // Load hash from your password DB.
+  return bcrypt.compareSync(passwd, hashedPaswd); // true / false
 }
 
 export { hashPassword, checkPassword };

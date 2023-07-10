@@ -9,6 +9,8 @@ userRegisterRouter.get("/", validateUserInformation, (req, res) => {
   const hashedPassword = hashPassword(password);
   console.log(hashedPassword);
 
+  // db
+
   return res.json({ email, password });
 });
 
