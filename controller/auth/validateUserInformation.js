@@ -17,7 +17,7 @@ const validateUserInformation = [
     .withMessage(
       "Password must be at least 6 characters long and at max 12 characters long"
     ),
-  body("role").notEmpty().isIn(["admin", "user"]).withMessage("Invalid Role"),
+  // body("role").notEmpty().isIn(["admin", "user"]).withMessage("Invalid Role"),
 
   // Handle validation errors
   (req, res, next) => {

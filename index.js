@@ -3,6 +3,7 @@ import userRegisterRouter from "./routes/auth/userRegister.js";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import userLoginrRouter from "./routes/auth/userLogin.js";
 
 dotenv.config(); // using env variables
 
@@ -15,6 +16,7 @@ app.use(bodyParser.json());
 
 // Using Routes
 app.use("/api/register", userRegisterRouter);
+app.use("/api/login", userLoginrRouter);
 // Connect to DB
 mongoose.connect(dbUri);
 
